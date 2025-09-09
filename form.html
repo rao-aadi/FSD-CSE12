@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <center>
+        <div id="form">
+            <h2 id="info">Enter Information</h2>
+            <form action="/action.php">
+                <label>Username:  </label>
+            <input type="text" placeholder="Enter Username">
+            <br>
+            <label>Password:  </label>
+            <input type="password" placeholder="Enter Password">
+            <br>
+            <button>Submit</button>
+            <br>
+            <h2>SELECT COURSE</h2>
+            <label for="101">
+                <input type="radio" value="BTech" name="Course" id="101">Btech
+            </label>
+            <label for="102">
+                <input type="radio" value="MTech" name="Course" id="102">MTech
+            </label>
+            <h2>Your Choice(s)</h2>
+            <input type="checkbox" value="Maths">Maths
+            <br>
+            <input type="checkbox" value="Physics">Physics
+            <br>
+            <input type="checkbox" value="Chemistry">Chemistry
+            <br>
+            <input type="checkbox" value="English">English
+            <br>
+            <textarea row="10" column="20" placeholder="Enter the message"></textarea>
+            <br>
+            <label>Enter the college: </label>
+            <select name="Colleges">
+                <option value="ABESEC">ABESEC</option>
+                <option value="ABESIT">ABESIT</option>
+                <option value="IITD">IITD</option>
+            </select>
+            <br>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
