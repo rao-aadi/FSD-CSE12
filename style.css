@@ -1,21 +1,44 @@
-.nav {
-  list-style: none;     /* removes bullets */
-  background-color: #333;
-  padding: 0;
-  margin: 0;
+.example-container {
+    width: 220px;
+    height: 220px;
+    background-color: lightblue;
+    position: relative;
+    overflow: hidden;   
 }
 
-.nav li {
-  display: inline;      /* shows items in one line */
+/* small box that will move inside the container */
+.example-box {
+    width: 40px;
+    height: 40px;           
+    background-color: navy;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-.nav a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 15px;
-  display: inline-block;
-}
-
-.nav a:hover {
-  background-color: #555;  /* color changes on hover */
+@keyframes example {
+    0% {
+        background-color: aquamarine;
+        transform: translate(0px, 0px);
+    }
+    25% {
+        background-color: red;
+        transform: translate(0px, 60px);
+    }
+    50% {
+        background-color: yellow;
+        transform: translate(80px, 120px);
+    }
+    75% {
+        background-color: green;
+        transform: translate(120px, 160px);
+    }
+    100% {
+        background-color: blue;
+        transform: translate(160px, 180px);
+    }
 }
